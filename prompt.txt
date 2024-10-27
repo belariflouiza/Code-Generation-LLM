@@ -1,0 +1,3 @@
+[[[python_snippet]]]
+Crée une fonction Python appelée {{{0}}} qui effectue l'opération suivante : {{{1}}}.
+

@@ -1,0 +1,337 @@
+Prompt: Écris une fonction Python qui fait cela : fonction palindrome et exemple d'utilisation.
+Réponse: Voici une fonction Python qui vérifie si un mot est un palindrome :
+
+```python
+def est_palindrome(mot):
+    mot = mot.lower()  # Convertir le mot en minuscules pour ignorer la casse
+    return mot == mot[::-1]
+
+# Exemple d'utilisation
+mot = "radar"
+if est_palindrome(mot):
+    print(f"{mot} est un palindrome.")
+else:
+    print(f"{mot} n'est pas un palindrome.")
+```
+
+Vous pouvez copier ce code dans un fichier Python et l'exécuter pour tester la fonction avec différents mots.
+
+Prompt: Écris une fonction Python qui fait cela : palindrome avec example d'utilisation.
+Réponse: Voici une fonction Python qui vérifie si un mot est un palindrome :
+
+```python
+def est_palindrome(mot):
+    mot = mot.lower().replace(" ", "")  # retirer les espaces et mettre en minuscule
+    return mot == mot[::-1]
+
+# Exemple d'utilisation
+mot = "Engage le jeu que je le gagne"
+if est_palindrome(mot):
+    print(f"Le mot '{mot}' est un palindrome !")
+else:
+    print(f"Le mot '{mot}' n'est pas un palindrome.")
+```
+
+Dans cet exemple, la fonction `est_palindrome()` vérifie si le mot donné en argument est un palindrome en ignorant la casse et les espaces. Ensuite, on utilise la fonction avec un exemple de phrase contenant un palindrome pour illustrer son fonctionnement.
+
+Prompt: Écris une fonction Python qui fait cela : sum a et b avec exemple d'utilisation.
+Réponse: Voici une fonction Python qui calcule la somme de deux nombres `a` et `b`, ainsi qu'un exemple d'utilisation :
+
+```python
+def somme(a, b):
+    return a + b
+
+# Exemple d'utilisation
+a = 5
+b = 3
+resultat = somme(a, b)
+print(f"La somme de {a} et {b} est : {resultat}")
+```
+
+En exécutant ce code, vous verrez que la somme de 5 et 3 est affichée comme résultat.
+
+Prompt: Écris une fonction Python qui fait cela : fonction palindre avec example d'utilisation.
+Réponse: Voici une fonction Python appelée `est_palindrome` qui vérifie si une chaîne de caractères est un palindrome :
+
+```python
+def est_palindrome(chaine):
+    chaine = chaine.lower().replace(" ", "")
+    return chaine == chaine[::-1]
+
+# Exemple d'utilisation
+chaine1 = "radar"
+chaine2 = "Bonjour"
+chaine3 = "Engage le jeu que je le gagne"
+
+print(est_palindrome(chaine1))  # True
+print(est_palindrome(chaine2))  # False
+print(est_palindrome(chaine3))  # True
+```
+
+Cette fonction passe en revue la chaîne de caractères en convertissant toutes les lettres en minuscules et en supprimant les espaces. Ensuite, elle vérifie si la chaîne est égale à sa version inversée, renvoyant ainsi `True` si c'est un palindrome et `False` sinon.
+
+Prompt: Écris une fonction Python qui fait cela : fonction somme a et b.
+Réponse: Voici une fonction simple en Python qui prend deux paramètres, a et b, les ajoute ensemble et retourne le résultat :
+
+```python
+def somme(a, b):
+    return a + b
+
+# Test de la fonction
+resultat = somme(4, 6)
+print(resultat)  # Output: 10
+```
+
+Vous pouvez appeler cette fonction avec deux nombres en paramètres pour obtenir la somme de ces nombres.
+
+Prompt: Écris une fonction Python qui fait cela : somme fonction.
+Réponse: Bien sûr ! Voici une fonction Python nommée `somme` qui prend une liste en entrée et renvoie la somme de tous les éléments de la liste :
+
+```python
+def somme(liste):
+    total = 0
+    for element in liste:
+        total += element
+    return total
+
+# Exemple d'utilisation
+ma_liste = [1, 2, 3, 4, 5]
+resultat = somme(ma_liste)
+print(resultat)  # Output: 15
+``` 
+
+Vous pouvez appeler la fonction `somme` avec une liste de votre choix pour obtenir la somme de ses éléments.
+
+Prompt: Écris une fonction Python qui fait cela : fonction somme a et b.
+Réponse: Voici un exemple de fonction Python qui calcule la somme de deux nombres `a` et `b` :
+```python
+def somme(a, b):
+    return a + b
+
+# Exemple d'utilisation de la fonction
+a = 5
+b = 3
+resultat = somme(a, b)
+print(f"La somme de {a} et {b} est : {resultat}")
+```
+
+Cette fonction `somme` prend deux paramètres `a` et `b`, et retourne la somme de ces deux nombres. Ensuite, on peut appeler cette fonction avec deux valeurs de notre choix pour obtenir le résultat de la somme.
+
+Prompt: Écris une fonction Python qui fait cela : fonction palindrome est vraie.
+Réponse: Voici une fonction en Python qui vérifie si un mot est un palindrome ou non :
+
+```python
+def est_palindrome(mot):
+    mot = mot.lower()  # Convertir le mot en minuscules pour ignorer la casse
+    
+    # Comparer le mot avec son inverse
+    if mot == mot[::-1]:
+        return True
+    else:
+        return False
+
+# Exemple d'utilisation
+mot1 = "radar"
+mot2 = "hello"
+
+if est_palindrome(mot1):
+    print(f"{mot1} est un palindrome.")
+else:
+    print(f"{mot1} n'est pas un palindrome.")
+
+if est_palindrome(mot2):
+    print(f"{mot2} est un palindrome.")
+else:
+    print(f"{mot2} n'est pas un palindrome.")
+```
+
+Cette fonction prend un mot en entrée, le convertit en minuscules pour ignorer la casse et vérifie s'il est un palindrome en comparant le mot avec son inverse. Ensuite, un exemple d'utilisation est fourni avec les mots "radar" (qui est un palindrome) et "hello" (qui n'est pas un palindrome).
+
+Prompt: Écris une fonction Python qui fait cela : suite de fibonnacci.
+Réponse: Voici une fonction Python qui génère la suite de Fibonacci jusqu'à un certain nombre donné :
+
+```python
+def fibonacci(n):
+    fibo = [0, 1]
+    while fibo[-1] + fibo[-2] < n:
+        fibo.append(fibo[-1] + fibo[-2])
+    
+    return fibo
+
+# Exemple d'utilisation
+n = 100
+resultat = fibonacci(n)
+print(resultat)
+```
+
+Cette fonction génère la suite de Fibonacci jusqu'à ce que le prochain nombre dans la suite dépasse la valeur `n`. Elle retourne une liste contenant les nombres de la suite de Fibonacci jusqu'à ce point.
+
+Prompt: Écris une fonction Python qui fait cela : palindrome example.
+Réponse: Voici une fonction en Python qui vérifie si un mot est un palindrome :
+
+```python
+def est_palindrome(mot):
+    mot = mot.lower()  # Convertir le mot en minuscules
+    mot = mot.replace(" ", "")  # Supprimer les espaces
+
+    return mot == mot[::-1]  # Vérifier si le mot est égal à son inverse
+
+# Tester la fonction
+mot_test = "radar"
+if est_palindrome(mot_test):
+    print(f"{mot_test} est un palindrome.")
+else:
+    print(f"{mot_test} n'est pas un palindrome.")
+```
+
+Cette fonction convertit d'abord le mot en minuscules et supprime les espaces. Ensuite, elle vérifie si le mot est égal à son inverse en utilisant le slicing `[::1]`. En fonction du résultat, elle affiche si le mot est un palindrome ou non.
+
+Prompt: Écris une fonction Python qui fait cela : palindrome.
+Réponse: Voici un exemple simple de fonction Python qui vérifie si une chaîne de caractères est un palindrome :
+
+```python
+def est_palindrome(chaine):
+    chaine = chaine.lower().replace(" ", "")  # Convertit la chaîne en minuscules et supprime les espaces
+    return chaine == chaine[::-1]  # Vérifie si la chaîne est égale à sa version inversée
+
+# Exemple d'utilisation
+mot = "Engage le jeu que je le gagne"
+if est_palindrome(mot):
+    print(f"{mot} est un palindrome !")
+else:
+    print(f"{mot} n'est pas un palindrome.")
+```
+
+Cette fonction prend une chaîne de caractères en entrée, la convertit en minuscules et enlève les espaces, puis vérifie si la chaîne est égale à sa version inversée. Si c'est le cas, la fonction retourne True, sinon elle retourne False.
+
+Prompt: Écris une fonction Python qui fait cela : somme a and b.
+Réponse: Voici une fonction en Python qui calcule la somme de deux nombres a et b :
+
+```python
+def somme(a, b):
+    return a + b
+
+# Exemple d'utilisation de la fonction
+a = 5
+b = 3
+resultat = somme(a, b)
+print(f"La somme de {a} et {b} est : {resultat}")
+```
+
+Cette fonction prend deux paramètres, a et b, et retourne leur somme. Vous pouvez l'appeler en passant les valeurs que vous souhaitez additionner.
+
+Prompt: Écris une fonction Python qui fait cela : multiply a and b.
+Réponse: Voici une fonction Python qui multiplie deux nombres a et b :
+
+```python
+def multiply(a, b):
+    return a * b
+
+# Exemple d'utilisation
+resultat = multiply(5, 3)
+print(resultat)  # Affiche 15
+```
+
+Cette fonction prend deux paramètres, a et b, et renvoie leur produit en les multipliant. Vous pouvez l'appeler avec les valeurs de votre choix pour effectuer la multiplication.
+
+Prompt: Écris une fonction Python qui fait cela : palindrome et example d'utilisation.
+Réponse: Voici une fonction Python qui vérifie si un mot est un palindrome :
+
+```python
+def est_palindrome(mot):
+    mot = mot.lower()  # Convertir le mot en minuscules pour ignorer la casse
+    return mot == mot[::-1]  # Vérifier si le mot est égal à son inverse
+
+# Exemple d'utilisation
+mot_1 = "radar"
+mot_2 = "bonjour"
+
+if est_palindrome(mot_1):
+    print(f"{mot_1} est un palindrome.")
+else:
+    print(f"{mot_1} n'est pas un palindrome.")
+
+if est_palindrome(mot_2):
+    print(f"{mot_2} est un palindrome.")
+else:
+    print(f"{mot_2} n'est pas un palindrome.")
+```
+
+Dans cet exemple, la fonction `est_palindrome` retourne `True` si le mot est un palindrome et `False` sinon. Vous pouvez l'utiliser en passant des mots en paramètre pour vérifier s'ils sont des palindromes ou non.
+
+Prompt: Écris une fonction Python qui fait cela : somme a and b.
+Réponse: Voici un exemple de fonction Python qui calcule la somme de deux nombres, `a` et `b` :
+
+```python
+def somme(a, b):
+    return a + b
+```
+
+Cette fonction prend deux paramètres `a` et `b`, les ajoute ensemble à l'aide de l'opérateur `+`, puis renvoie le résultat de la somme. Vous pouvez l'appeler en passant deux nombres comme arguments pour obtenir la somme de ces deux nombres. Par exemple, `somme(3, 5)` renverra `8`.
+
+Prompt: Écris une fonction Python qui fait cela : some a et b.
+Réponse: Bien sûr ! Voici une fonction Python qui prend deux nombres en entrée, les ajoute et retourne le résultat :
+
+```python
+def somme(a, b):
+    return a + b
+
+# Exemple d'utilisation
+resultat = somme(5, 3)
+print(resultat)  # Output: 8
+```
+
+Vous pouvez appeler cette fonction avec deux nombres de votre choix pour obtenir la somme.
+
+Prompt: Écris une fonction Python qui fait cela : palindrome avec example.
+Réponse: Voici une fonction Python qui vérifie si un mot est un palindrome ou non, et un exemple d'utilisation :
+
+```python
+def est_palindrome(mot):
+    mot_inverse = mot[::-1]
+    if mot == mot_inverse:
+        return True
+    else:
+        return False
+
+# Exemple d'utilisation
+mot1 = "radar"
+mot2 = "bonjour"
+
+if est_palindrome(mot1):
+    print(f"{mot1} est un palindrome.")
+else:
+    print(f"{mot1} n'est pas un palindrome.")
+
+if est_palindrome(mot2):
+    print(f"{mot2} est un palindrome.")
+else:
+    print(f"{mot2} n'est pas un palindrome.")
+```
+
+Cela affichera :
+```
+radar est un palindrome.
+bonjour n'est pas un palindrome.
+```
+
+Prompt: Écris une fonction Python qui fait cela : palindrome avec example.
+Réponse: Voici une fonction Python qui vérifie si une chaîne de caractères est un palindrome :
+
+```python
+def est_palindrome(mot):
+    mot = mot.lower().replace(" ", "")
+    return mot == mot[::-1]
+
+# Exemple d'utilisation
+mot1 = "radar"
+mot2 = "Bonjour"
+mot3 = "Eva, lève ce vélo !"
+
+print(est_palindrome(mot1))  # True
+print(est_palindrome(mot2))  # False
+print(est_palindrome(mot3))  # True
+```
+
+Cette fonction prend en compte les majuscules et les espaces en ne considérant que les lettres. Vous pouvez tester différents mots pour voir s'ils sont des palindromes.
+
